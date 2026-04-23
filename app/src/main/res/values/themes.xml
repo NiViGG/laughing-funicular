@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyceliumAI" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">#080c12</item>
+        <item name="android:statusBarColor">#080c12</item>
+        <item name="android:navigationBarColor">#080c12</item>
+    </style>
+</resources>
