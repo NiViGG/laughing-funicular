@@ -1,0 +1,22 @@
+# Built artifacts
+build/
+app/build/
+.gradle/
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+local.properties
+
+# Captures
+captures/
+
+# Keystore files (never commit these)
+*.jks
+*.keystore
+
+# Google services
+google-services.json
+
+# Misc
+.DS_Store
