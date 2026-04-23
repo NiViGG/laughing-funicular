@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.Settings
 import android.webkit.*
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -63,12 +64,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         webView.addJavascriptInterface(AndroidBridge(this), "AndroidBridge")
-    }
 
-    @Deprecated("Deprecated in Java")
-    override fun onBackPressed() {
-        if (webView.canGoBack()) webView.goBack()
-        else super.onBackPressed()
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (webView.canGoBack()) webView.goBack() else finish()
+            }
+        })
     }
 
     companion object {
