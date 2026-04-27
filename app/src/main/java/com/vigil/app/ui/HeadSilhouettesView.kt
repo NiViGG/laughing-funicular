@@ -40,9 +40,6 @@ class HeadSilhouettesView @JvmOverloads constructor(
         strokeCap = Paint.Cap.ROUND
         strokeJoin = Paint.Join.ROUND
     }
-    private val fillPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        style = Paint.Style.FILL
-    }
 
     /** Listener for taps on left (NEGATIVE / red X) or right (POSITIVE / green ✓) head. */
     var onHeadTap: ((Result) -> Unit)? = null

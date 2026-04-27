@@ -58,7 +58,7 @@ object CCIEngine {
         val sharedAmp = if (rng.nextDouble() < 0.5) 0.2 else 0.9
         val freq = 0.05 + rng.nextDouble() * 0.05
         val phaseJitterMax = if (sharedAmp > 0.5) 0.15 else 1.0
-        return List(numChannels) { ch ->
+        return List(numChannels) { _ ->
             val phase = rng.nextDouble() * phaseJitterMax
             DoubleArray(samples) { n ->
                 sharedAmp * sin(2.0 * Math.PI * freq * n + phase) +
