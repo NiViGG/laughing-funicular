@@ -99,7 +99,6 @@ class HeadSilhouettesView @JvmOverloads constructor(
         // Layout inside the cell
         val cellPadX = w * 0.10f
         val cellPadY = h * 0.10f
-        val cx = left + w * 0.55f * if (faceRight) 1f else 1f // recompute below
         val headBoxLeft = left + cellPadX
         val headBoxTop = top + cellPadY
         val headBoxRight = left + w - cellPadX

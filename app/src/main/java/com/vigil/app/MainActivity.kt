@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
         indicators.litColors = arrayOf(null, null, null)
 
         // 3 checks within 3–5 s total. Pick total duration in [3000, 5000] ms.
-        val total = 3000 + (Math.random() * 2000).toLong() // 3000..5000
+        val total = 3000L + kotlin.random.Random.nextLong(0, 2001) // 3000..5000
         val perCheck = total / 3
         val outcomes = mutableListOf<Boolean>()
 
