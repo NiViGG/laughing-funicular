@@ -36,11 +36,11 @@ jobs:
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: mycelium-ai-debug
+          name: vigil-debug
           path: app/build/outputs/apk/debug/*.apk
 
       - name: Upload release APK (unsigned)
         uses: actions/upload-artifact@v4
         with:
-          name: mycelium-ai-release-unsigned
+          name: vigil-release-unsigned
           path: app/build/outputs/apk/release/*.apk

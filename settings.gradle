@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MyceliumAI"
+rootProject.name = "VIGIL"
 include ':app'
