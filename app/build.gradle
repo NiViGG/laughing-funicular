@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace 'com.mycelium.ai'
+    namespace 'com.vigil.app'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.mycelium.ai"
+        applicationId "com.vigil.app"
         minSdk 24
         targetSdk 34
         versionCode 1
-        versionName "2.0.0"
+        versionName "1.0.0"
     }
 
     buildTypes {
@@ -32,4 +32,5 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
 }
